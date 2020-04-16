@@ -3,7 +3,9 @@ package com.HelthCare.HealthCare;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
@@ -64,5 +66,14 @@ public class userResource {
 		
 		
 	}
+	
+	@POST
+	@Path("/user")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public user createUser(user u4) {
+		System.out.println(u4);
+		return u4;
+	} 
+	
 
 }

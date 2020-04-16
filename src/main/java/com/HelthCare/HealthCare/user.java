@@ -81,6 +81,14 @@ public class user {
 	public void setU_contact(int u_contact) {
 		this.u_contact = u_contact;
 	}
+	@Override
+	public String toString() {
+		return "user [u_id=" + u_id + ", u_fname=" + u_fname + ", u_lname=" + u_lname + ", u_age=" + u_age
+				+ ", u_address=" + u_address + ", u_sex=" + u_sex + ", u_email=" + u_email + ", u_username="
+				+ u_username + ", u_password=" + u_password + ", u_type=" + u_type + ", u_contact=" + u_contact + "]";
+	}
+	
+	
 	
 
 }
